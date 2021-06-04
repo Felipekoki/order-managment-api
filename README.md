@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Api para apresentação de um gerenciamento de Pedido, utilizando o framework [Nest](https://github.com/nestjs/nest).
 
 ## Instalando
 
@@ -33,7 +33,7 @@ $ npm install
 ```
 ## Configurando
 
-Banco de dados, src/ormconfig
+Banco de dados, src/ormconfig *está pré-configurado para o docker*  
 Email, src/mailconfig
 
 ## Local
