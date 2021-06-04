@@ -7,12 +7,12 @@ export const MailConfig: MailerOptions = {
         host: 'smtp.zoho.com',
         secure: false,
         auth: {
-          user: 'digitalfile@camaleaosoft.com',
-          pass: 'DigitalFile@2018',
+          user: 'username',
+          pass: 'password',
         },
       },
       defaults: {
-        from: '"No Reply" <digitalfile@camaleaosoft.com>',
+        from: '"No Reply" <username>',
       },
       template: {
         dir: __dirname + '/domain/assets/templates/order',
