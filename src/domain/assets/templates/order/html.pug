@@ -1,0 +1,60 @@
+table(border='0', width="100%" align='center', cellpadding='0', cellspacing='0')
+  tr
+    td(align='center', bgcolor='#70bbd9', style='padding: 40px 0 30px 0;')
+      span(style='font-size: 36px; font-weight: 800; color: #18486c;')
+        | Dados do Pedido #{pedidoId}
+      br
+      span(style="font-size: 20px; font-weight: 500; color: #18486c; font-family: 'Oxygen', sans-serif;")
+        | #{pedidoObs}
+        br
+        small #{pedidoData}
+  tr
+    td(align='center', bgcolor='#ffffff')
+      div(style='margin: 32px; text-align: justify; color: #18486c')
+        | Pedido n&ordm; 
+        b #{ pedidoId}
+        | .
+        br
+        br
+        span(style='font-size: 18px;') Cliente
+        br
+        b Nome:
+        |  #{clienteNome}}
+        br
+        b CPF:
+        |  #{clienteCPF}}
+        br
+        b Email:
+        |  #{clienteEmail}}
+        br
+        b Sexo:
+        |  #{clienteSexo}}
+        br
+        br
+        span(style='font-size: 18px;') Produtos
+        br
+        table(border='1', cellspacing='0', width='100%')
+          tr
+            td C&oacute;digo
+            td Nome
+            td Cor
+            td Tamanho
+            td Valor
+          each val in produtoList 
+            tr 
+                td= val.id
+                td= val.nome
+                td= val.cor
+                td= val.tamanho
+                td= val.valor
+          tr
+            td(colspan='4') Total
+            td #{pedidoTotal}
+        br
+        br
+  tr
+    td(align='center', bgcolor='#ee4c50')
+      div(style='margin: 16px; color:white; text-align: justify;')
+        | &reg; Empresa - 2021
+        br
+        span(style='font-size:12px') Gerado pelo Orger Mangement Api.

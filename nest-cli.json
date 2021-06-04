@@ -1,0 +1,11 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "assets": [
+      "domain/assets/templates/*.pug",
+      "domain/assets/templates/**/*.pug"
+    ],
+    "watchAssets": true
+  }
+}
